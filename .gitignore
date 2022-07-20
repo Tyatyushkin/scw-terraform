@@ -1,6 +1,6 @@
 /.idea/
 terraform.tfvars
-.terraform.lock.hcl
+.terraform.lock.*
 *.tfstate
 *.tfstate.*.backup
 *.tfstate.backup
