@@ -3,6 +3,6 @@ output "external_ip_addr" {
   description = "External Bastion IP"
 }
 output "bucket_endpoint" {
-  value = scaleway_object_bucket.main.endpoint
+  value       = scaleway_object_bucket.main.endpoint
   description = "S3 bucket endpoint"
 }
