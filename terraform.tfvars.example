@@ -1,0 +1,4 @@
+public_key = "your_ssh_public_key"
+project_id = "your_project_id"
+access_key = "your_access_key"
+secret_key = "your_secret_key"
