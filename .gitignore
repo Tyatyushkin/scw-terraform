@@ -1,5 +1,5 @@
 /.idea/
-variables.json
+terraform.tfvars
 .terraform.lock.hcl
 *.tfstate
 *.tfstate.*.backup
