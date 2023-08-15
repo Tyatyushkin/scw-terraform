@@ -4,7 +4,7 @@ resource "scaleway_instance_ip" "ip_public" {
 
 resource "scaleway_instance_server" "bastion" {
   type              = "DEV1-S"
-  image             = "ubuntu_focal"
+  image             = "ubuntu_jammy"
   tags              = ["bastion", "public"]
   zone              = var.zone
   name              = "Bastion"

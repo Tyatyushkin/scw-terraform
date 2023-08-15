@@ -2,13 +2,10 @@ output "external_ip_addr" {
   value       = scaleway_instance_ip.ip_public.address
   description = "External Bastion IP"
 }
-output "jenkins_ip_addr" {
-  value       = scaleway_instance_ip.ip_jenkins.address
-  description = "External Jenkins IP"
-}
-output "docker_ip_addr" {
-  value       = scaleway_instance_ip.ip_docker.address
-  description = "External Jenkins IP"
+
+output "dev_ip_add" {
+  value = scaleway_instance_ip.ip_dev.address
+  description = "Dev external IP"
 }
 output "bucket_endpoint" {
   value       = scaleway_object_bucket.main.endpoint
