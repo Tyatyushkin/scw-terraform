@@ -7,7 +7,7 @@ resource "scaleway_instance_server" "dev" {
   image             = "ubuntu_jammy"
   tags              = ["develop", "public"]
   zone              = var.zone
-  name              = "Bastion"
+  name              = "DevOps"
   enable_dynamic_ip = "false"
   ip_id             = scaleway_instance_ip.ip_dev.id
 }
