@@ -4,10 +4,10 @@ resource "scaleway_instance_ip" "ip_dev" {
 
 resource "scaleway_instance_server" "dev" {
   type              = "DEV1-S"
-  image             = "ubuntu_jammy"
+  image             = "debian_bookworm"
   tags              = ["develop", "public"]
   zone              = var.zone
-  name              = "DevOps"
+  name              = "devops"
   enable_dynamic_ip = "false"
   ip_id             = scaleway_instance_ip.ip_dev.id
 }
