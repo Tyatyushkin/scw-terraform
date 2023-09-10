@@ -4,7 +4,7 @@ resource "scaleway_instance_ip" "ip_dev" {
 
 resource "scaleway_instance_server" "dev" {
   type              = "DEV1-S"
-  image             = "debian_bookworm"
+  image             = "centos_stream_9"
   tags              = ["develop", "public"]
   zone              = var.zone
   name              = "devops"
